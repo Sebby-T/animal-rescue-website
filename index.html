@@ -15,7 +15,7 @@
 <body>
 
   <header>
-    <div class="masthead grid grid-middle pad-t-1-2 wrapper text-center">
+    <div class="masthead grid grid-middle pad-t-1-2 wrapper text-center relative">
       <div class="unit xs-1-2 s-1-2 m-1 l-1-4 push-1-2">
         <div class="ib">
           <a href="index.html">
@@ -51,19 +51,14 @@
         </menu>
       </nav>
       <input type="checkbox" id="mob-nav" class="nav-check unit xs-0">
-      <label for="mob-nav" class="ib unit xs-1-2 s-1-2 m-0 text-right island-1-2 push-1-2">
-        <i class="icon i-48 nav-open">
-          <svg>
-            <use fill="#fff" xlink:href="images/icons.svg#hamburger" />
-          </svg>
-        </i>
-        <i class="icon i-48 nav-close">
-          <svg>
-            <use class="nav-close" fill="#ff704d" xlink:href="images/icons.svg#hamburger" />
+      <label for="mob-nav" class="nav-label ib unit xs-1-2 s-1-2 m-0 text-right island-1-2 push-1-2">
+        <i class="icon i-48">
+          <svg class="nav-icon">
+            <use xlink:href="images/icons.svg#hamburger" />
           </svg>
         </i>
       </label>
-      <nav class="mob-nav unit xs-1 s-1 m-0 l-0">
+      <nav class="mob-nav unit xs-1 s-1 m-0 l-0 zindex-1000">
         <menu class="list-group push-0 text-center">
           <li class="island-1-2 block">
             <a class="rob btn" href="#">About Us</a>
@@ -257,7 +252,7 @@
         </ul>
       </nav>
     </div>
-    <div class="unit xs-1 s-1 m-1 l-1 xl-2 text-center pad-b">
+    <div class="unit xs-1 s-1 m-1 l-1 xl-2 text-center pad-b gutter-2">
       <small class="rob micro"> All breed dog rescue in Ottawa © Freedom Dog Rescue all rights reserved</small>
     </div>
   </footer>
