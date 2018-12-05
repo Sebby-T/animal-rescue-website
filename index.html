@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Homepage</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shorcut icon" href="favicon.ico">
+  <link rel="icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon-196.png">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -26,12 +26,38 @@
           <h1 class="kilo rale push-0 text-left">Freedom<br>Dog Rescue</h1>
         </div>
       </div>
+      <nav class="nav unit xs-0 s-0 m-1 l-3-4">
+        <menu class="list-group-inline push-0">
+          <li class="push-1-2">
+            <a class="rob btn" href="#">About Us</a>
+          </li>
+          <li class="push-1-2">
+            <a class="rob btn" href="#">Volunteer</a>
+          </li>
+          <li class="push-1-2 current">
+            <a class="rob btn" href="#">Events</a>
+          </li>
+          <li class="push-1-2">
+            <a class="rob btn" href="#">Adopt</a>
+          </li>
+          <li class="push-1-2">
+            <a class="rob btn" href="#">Contact Us</a>
+          </li>
+          <li class="donate gutter-1-8 push-1-2">
+            <a class="rob btn btn-ghost" href="#">Donate</a>
+          </li>
+        </menu>
+      </nav>
       <input type="checkbox" id="mob-nav" class="nav-check unit xs-0">
       <label for="mob-nav" class="ib unit xs-1-2 s-1-2 m-0 text-right island-1-2 push-1-2">
-        <i class="icon i-48">
+        <i class="icon i-48 nav-open">
           <svg>
-            <use class="nav-open" xlink:href="images/icons.svg#hamburger-open" />
-            <use class="nav-close" xlink:href="images/icons.svg#hamburger-close" />
+            <use fill="#fff" xlink:href="images/icons.svg#hamburger" />
+          </svg>
+        </i>
+        <i class="icon i-48 nav-close">
+          <svg>
+            <use class="nav-close" fill="#ff704d" xlink:href="images/icons.svg#hamburger" />
           </svg>
         </i>
       </label>
@@ -57,84 +83,93 @@
           </li>
         </menu>
       </nav>
-      <nav class="nav unit xs-0 s-0 m-1 l-3-4">
-        <menu class="list-group-inline push-0">
-          <li class="push-1-2">
-            <a class="rob btn" href="#">About Us</a>
-          </li>
-          <li class="push-1-2">
-            <a class="rob btn" href="#">Volunteer</a>
-          </li>
-          <li class="push-1-2 current">
-            <a class="rob btn" href="#">Events</a>
-          </li>
-          <li class="push-1-2">
-            <a class="rob btn" href="#">Adopt</a>
-          </li>
-          <li class="push-1-2">
-            <a class="rob btn" href="#">Contact Us</a>
-          </li>
-          <li class="donate gutter-1-8 push-1-2">
-            <a class="rob btn btn-ghost" href="#">Donate</a>
-          </li>
-        </menu>
-      </nav>
     </div>
   </header>
 
   <main>
-    <div class="embed embed-16by9 relative">
+    <section class="embed embed-3by1 relative">
       <div class="banner embed-item">
-        <h2 class="rale giga pin-c max-length text-center gutter-2">Making freedom happen one dog at a time.</h2>
+        <div class="banner-content pin-c max-length gutter-1-2 text-center">
+          <h2 class="rale giga">Making freedom happen one dog at a time.</h2>
+        </div>
       </div>
-    </div>
-    <ol class="grid list-group-inline">
-      <li class="menu cards unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
-        <a class="menu-card" href="#">
-          <div class="embed embed-1by1 relative">
-            <img class="img-flex embed-item" src="images/adopt.jpg" alt="">
-            <div class="menu-info pin-cb text-center">
-              <h3 class="rob giga push">Adopt</h3>
-              <p class="rob bold text-upper">Learn More</p>
+    </section>
+
+    <section>
+      <ol class="grid list-group-inline">
+        <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
+          <a class="menu-card" href="#">
+            <div class="embed embed-1by1 relative">
+              <img class="img-flex embed-item" src="images/adopt.jpg" alt="">
+              <div class="menu-info pin-cb text-center">
+                <h3 class="rob giga push">Adopt</h3>
+                <p class="rob bold text-upper">Learn More</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </li>
-      <li class="menu cards unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
-        <a class="menu-card" href="#">
-          <div class="embed embed-1by1 relative">
-            <img class="img-flex embed-item" src="images/volunteer.jpg" alt="">
-            <div class="menu-info pin-cb text-center">
-              <h3 class="rob giga push">Volunteer</h3>
-              <p class="rob bold text-upper">Learn More</p>
+          </a>
+        </li>
+        <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
+          <a class="menu-card" href="#">
+            <div class="embed embed-1by1 relative">
+              <img class="img-flex embed-item" src="images/volunteer.jpg" alt="">
+              <div class="menu-info pin-cb text-center">
+                <h3 class="rob giga push">Volunteer</h3>
+                <p class="rob bold text-upper">Learn More</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </li>
-      <li class="menu cards unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
-        <a class="menu-card" href="#">
-          <div class="embed embed-1by1 relative">
-            <img class="img-flex embed-item" src="images/events.jpg" alt="">
-            <div class="menu-info pin-cb text-center">
-              <h3 class="rob giga push">Events</h3>
-              <p class="rob bold text-upper">Learn More</p>
+          </a>
+        </li>
+        <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
+          <a class="menu-card" href="#">
+            <div class="embed embed-1by1 relative">
+              <img class="img-flex embed-item" src="images/events.jpg" alt="">
+              <div class="menu-info pin-cb text-center">
+                <h3 class="rob giga push">Events</h3>
+                <p class="rob bold text-upper">Learn More</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </li>
-      <li class="menu cards unit xs-1 s-1 m-1-2 l-1-4 xl-1-4">
-        <a class="menu-card" href="#">
-          <div class="embed embed-1by1 relative">
-            <img class="img-flex embed-item" src="images/donate.jpg" alt="">
-            <div class="menu-info pin-cb text-center">
-              <h3 class="rob giga push">Donate</h3>
-              <p class="rob bold text-upper">Learn More</p>
+          </a>
+        </li>
+        <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
+          <a class="menu-card" href="#">
+            <div class="embed embed-1by1 relative">
+              <img class="img-flex embed-item" src="images/donate.jpg" alt="">
+              <div class="menu-info pin-cb text-center">
+                <h3 class="rob giga push">Donate</h3>
+                <p class="rob bold text-upper">Learn More</p>
+              </div>
             </div>
-          </div>
-        </a>
-      </li>
-    </ol>
+          </a>
+        </li>
+      </ol>
+    </section>
+
+    <section class="about grid gutter-2 pad-t-1-2 pad-b-1-2">
+      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 relative pad-t-2">
+        <h3 class="rale giga push-0 pin-c">About Us</h3>
+      </div>
+      <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2 pad-t-1-2 pad-b-1-2">
+        <p class="rob max-length">We are dedicated to rescuing homeless and abandoned dogs, dogs from shelters and taking in desperate owner surrenders when they can no longer care for them.</p>
+        <p class="rob max-length push-0">We do so by working with committed volunteers, foster homes, local veterinarians, and trainers. We are able to rescue dogs in need and provide them with loving temporary care until a well-matched carefully screened "furever home" is found.</p>
+      </div>
+    </section>
   </main>
+
+  <footer>
+    <div class="grid wrapper">
+      <nav class="unit">
+        <ul>
+          <li>
+            <a href="#">
+              <i class="icon i-48">
+                <svg class="fillstuff"><use fill="#fff" xlink:href="images/icons.svg#facebook" /></svg>
+              </i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </footer>
 
 </body>
 </html>
