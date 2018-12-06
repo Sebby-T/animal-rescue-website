@@ -106,7 +106,7 @@ header [type="checkbox"] + label::before {
 /* header navigation ends */
 
 .banner {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("../images/home-banner.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)), url("../images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -120,7 +120,7 @@ header [type="checkbox"] + label::before {
 
 .menu-info h3,
 .menu-info p {
-  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, .9));
 }
 
 .menu-info p {
@@ -133,6 +133,11 @@ header [type="checkbox"] + label::before {
   transition: all .5s linear;
   transform: scale(1.1);
   filter: blur(1px);
+}
+
+.cards:hover .menu-info h3 {
+  transform: scale(1.2);
+  transition: all .5s linear;
 }
 
 .cards:hover .menu-info p {
