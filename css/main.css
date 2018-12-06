@@ -3,12 +3,13 @@
 }
 
 .rale {
-  font-family: 'Raleway', sans-serif;
+  font-family: Raleway, sans-serif;
 }
 
 .rob {
-  font-family: 'Roboto', sans-serif;
+  font-family: Roboto, sans-serif;
 }
+
 header {
   background-color: #15202b;
 }
@@ -25,18 +26,11 @@ small {
   color: #fff;
 }
 
-.btn-ghost {
-  color: #fff;
-  border-color: #fff;
-}
-
-.btn-ghost:hover {
-  color: #fff;
-  border-color: #fff;
-}
-
 .mob-nav {
+  position: absolute;
+  top: 89px;
   display: none;
+  background-color: #15202b;
 }
 
 .mob-nav li {
@@ -55,28 +49,44 @@ small {
   background-color: #fff;
 }
 
+.mob-nav li:last-child:hover {
+  background-color: #ff704d;
+}
+
+.mob-nav li:last-child:hover a {
+  color: #0a0f15;
+  border-color: #0a0f15;
+  background-color: #ff704d;
+}
+
 .nav a:hover,
 .mob-nav li:hover a {
   color: #0a0f15;
   background-color: #fff;
 }
 
-.donate a:hover {
+.nav li:last-child a,
+.mob-nav li:last-child a {
+  color: #fff;
+  border: 3px solid #fff;
+}
+
+.nav li:last-child a:hover,
+.mob-nav li:last-child a:hover {
   color: #0a0f15;
   background-color: #ff704d;
-  border: 3px solid #ff704d;
+  border: 3px solid #0a0f15;
 }
 
 header [type="checkbox"] + label::before {
   top: -10em;
 }
-.return,
-.nav-label .nav-icon, {
+
+.nav-label .nav-icon {
   fill: #fff;
 }
 
-.nav-check:checked ~ .nav-label .nav-icon,
-.return:hover {
+.nav-check:checked ~ .nav-label .nav-icon {
   fill: #ff704d;
 }
 
@@ -85,7 +95,7 @@ header [type="checkbox"] + label::before {
   top: 89px;
   background-color: #15202b;
   display: block;
-  animation:
+  transition: all 200ms linear;
 }
 
 .current a,
@@ -93,11 +103,10 @@ header [type="checkbox"] + label::before {
   color: #ff704d;
 }
 
-
 /* header navigation ends */
 
 .banner {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url("../images/home-banner.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("../images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
@@ -112,6 +121,12 @@ header [type="checkbox"] + label::before {
 .menu-info h3,
 .menu-info p {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
+}
+
+.menu-info p {
+  border: 3px solid #fff;
+  padding: .42em .75em;
+  border-radius: 6px;
 }
 
 .cards:hover img {
@@ -145,7 +160,11 @@ footer li a {
   color: #ff704d;
 }
 
-.return:hover {
+footer .return {
+  fill: #fff;
+}
+
+footer .return:hover {
   fill: #ff704d;
 }
 
