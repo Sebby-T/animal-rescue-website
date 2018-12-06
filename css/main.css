@@ -3,13 +3,12 @@
 }
 
 .rale {
-  font-family: Raleway, sans-serif;
+  font-family: 'Raleway', sans-serif;
 }
 
 .rob {
-  font-family: Roboto, sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
-
 header {
   background-color: #15202b;
 }
@@ -37,10 +36,7 @@ small {
 }
 
 .mob-nav {
-  position: absolute;
-  top: 89px;
   display: none;
-  background-color: #15202b;
 }
 
 .mob-nav li {
@@ -89,7 +85,7 @@ header [type="checkbox"] + label::before {
   top: 89px;
   background-color: #15202b;
   display: block;
-  transition: all 200ms linear;
+  animation:
 }
 
 .current a,
@@ -101,7 +97,7 @@ header [type="checkbox"] + label::before {
 /* header navigation ends */
 
 .banner {
-  background-image: linear-gradient(to top, rgba(0, 0, 0, .7), rgba(0, 0, 0, 0)), url("../images/home-banner.jpg");
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.0)), url("../images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
