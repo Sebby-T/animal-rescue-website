@@ -29,12 +29,14 @@ small {
 .mob-nav {
   position: absolute;
   top: 89px;
+  right: 0px;
+  width: 15em;
   display: none;
   background-color: #15202b;
 }
 
 .mob-nav li {
-  border-top: 2px solid #fff;
+  border-top: 1px solid #fff;
 }
 
 .nav a,
@@ -95,7 +97,7 @@ header [type="checkbox"] + label::before {
   top: 89px;
   background-color: #15202b;
   display: block;
-  transition: all 200ms linear;
+  animation: slide 200ms ease-out forwards;
 }
 
 .current a,
@@ -203,6 +205,18 @@ footer .return:hover {
 
   nav:last-child .footer-list {
     border: none;
+  }
+
+}
+
+@keyframes slide {
+
+  0% {
+    right: -250px;
+  }
+
+  100% {
+    right: 0px;
   }
 
 }
