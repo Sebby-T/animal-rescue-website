@@ -1034,9 +1034,9 @@ button:focus,
 button:hover,
 .btn:focus,
 .btn:hover {
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
+  background-color: #fff;
+  border-color: #fff;
+  color: #000;
 }
 
 button[disabled] {
@@ -1069,8 +1069,8 @@ button[disabled] {
 .btn-ghost:hover,
 .btn--ghost:focus,
 .btn--ghost:hover {
-  background-color: #e2e2e2;
-  border-color: #000;
+  background-color: #fff;
+  border-color: #fff;
   color: #000;
 }
 

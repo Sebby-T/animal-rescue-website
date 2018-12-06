@@ -26,6 +26,16 @@ small {
   color: #fff;
 }
 
+.btn-ghost {
+  color: #fff;
+  border-color: #fff;
+}
+
+.btn-ghost:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
 .mob-nav {
   position: absolute;
   top: 89px;
@@ -49,44 +59,28 @@ small {
   background-color: #fff;
 }
 
-.mob-nav li:last-child:hover {
-  background-color: #ff704d;
-}
-
-.mob-nav li:last-child:hover a {
-  color: #0a0f15;
-  border-color: #0a0f15;
-  background-color: #ff704d;
-}
-
 .nav a:hover,
 .mob-nav li:hover a {
   color: #0a0f15;
   background-color: #fff;
 }
 
-.nav li:last-child a,
-.mob-nav li:last-child a {
-  color: #fff;
-  border: 3px solid #fff;
-}
-
-.nav li:last-child a:hover,
-.mob-nav li:last-child a:hover {
+.donate a:hover {
   color: #0a0f15;
   background-color: #ff704d;
-  border: 3px solid #0a0f15;
+  border: 3px solid #ff704d;
 }
 
 header [type="checkbox"] + label::before {
   top: -10em;
 }
-
-.nav-label .nav-icon {
+.return,
+.nav-label .nav-icon, {
   fill: #fff;
 }
 
-.nav-check:checked ~ .nav-label .nav-icon {
+.nav-check:checked ~ .nav-label .nav-icon,
+.return:hover {
   fill: #ff704d;
 }
 
@@ -102,6 +96,7 @@ header [type="checkbox"] + label::before {
 .current .btn {
   color: #ff704d;
 }
+
 
 /* header navigation ends */
 
@@ -121,12 +116,6 @@ header [type="checkbox"] + label::before {
 .menu-info h3,
 .menu-info p {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, .8));
-}
-
-.menu-info p {
-  border: 3px solid #fff;
-  padding: .42em .75em;
-  border-radius: 6px;
 }
 
 .cards:hover img {
@@ -158,6 +147,10 @@ footer li a {
 .footer-list li:hover a,
 .footer-list li:hover p {
   color: #ff704d;
+}
+
+.return:hover {
+  fill: #ff704d;
 }
 
 @media only screen and (min-width: 38em) {
