@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Homepage</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="icon" href="favicon.ico">
+  <link rel="shortcut icon" href="favicon.ico">
   <link rel="icon" type="image/png" href="favicon-196.png">
   <link href="css/modules.css" rel="stylesheet">
   <link href="css/grid.css" rel="stylesheet">
@@ -14,11 +14,16 @@
 </head>
 <body>
 
-  <header>
-    <div class="masthead grid grid-middle pad-t-1-2 wrapper text-center relative">
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
+    <div class="masthead grid grid-middle pad-t-1-2 wrapper text-center relative" id="top">
       <div class="unit xs-1-2 s-1-2 m-1 l-1-4 push-1-2">
         <div class="ib">
-          <a href="index.html">
+          <a href="index.html" aria-label="link to homepage.">
             <i class="icon i-64 logo">
               <svg><use fill="#fff" xlink:href="images/fdr-logos.svg#fdr-logo-white" /></svg>
             </i>
@@ -28,15 +33,45 @@
           <h1 class="kilo rale push-0 text-left">Freedom<br>Dog Rescue</h1>
         </div>
       </div>
-      <nav class="nav unit xs-0 s-0 m-1 l-3-4">
-        <menu class="list-group-inline push-0">
+      <input type="checkbox" id="mob-nav" class="nav-check unit xs-0">
+      <label for="mob-nav" class="nav-label ib unit xs-1-2 s-1-2 m-0 text-right island-1-2 push-1-2">
+        <i class="icon i-48">
+          <svg class="nav-icon">
+            <use xlink:href="images/icons.svg#hamburger" />
+          </svg>
+        </i>
+      </label>
+      <nav class="mob-nav unit xs-1 s-1 m-0 l-0 zindex-1000">
+        <ul class="list-group push-0 text-center">
+          <li class="island-1-2 block">
+            <a class="rob btn" href="#">About Us</a>
+          </li>
+          <li class="island-1-2 block">
+            <a class="rob btn" href="#">Volunteer</a>
+          </li>
+          <li class="island-1-2 block">
+            <a class="rob btn" href="#">Events</a>
+          </li>
+          <li class="island-1-2 block">
+            <a class="rob btn" href="#">Adopt</a>
+          </li>
+          <li class="island-1-2 block">
+            <a class="rob btn" href="#">Contact Us</a>
+          </li>
+          <li class="island-1-2 block">
+            <a class="rob btn btn-ghost" href="#">Donate</a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav unit xs-0 s-0 m-1 l-3-4" id="nav" role="navigation">
+        <ul class="list-group-inline push-0">
           <li class="push-1-2">
             <a class="rob btn" href="#">About Us</a>
           </li>
           <li class="push-1-2">
             <a class="rob btn" href="#">Volunteer</a>
           </li>
-          <li class="push-1-2 current">
+          <li class="push-1-2">
             <a class="rob btn" href="#">Events</a>
           </li>
           <li class="push-1-2">
@@ -48,42 +83,12 @@
           <li class="donate gutter-1-8 push-1-2">
             <a class="rob btn btn-ghost" href="#">Donate</a>
           </li>
-        </menu>
-      </nav>
-      <input type="checkbox" id="mob-nav" class="nav-check unit xs-0">
-      <label for="mob-nav" class="nav-label ib unit xs-1-2 s-1-2 m-0 text-right island-1-2 push-1-2">
-        <i class="icon i-48">
-          <svg class="nav-icon">
-            <use xlink:href="images/icons.svg#hamburger" />
-          </svg>
-        </i>
-      </label>
-      <nav class="mob-nav unit xs-1 s-1 m-0 l-0 zindex-1000">
-        <menu class="list-group push-0 text-center">
-          <li class="island-1-2 block">
-            <a class="rob btn" href="#">About Us</a>
-          </li>
-          <li class="island-1-2 block">
-            <a class="rob btn" href="#">Volunteer</a>
-          </li>
-          <li class="island-1-2 block current">
-            <a class="rob btn" href="#">Events</a>
-          </li>
-          <li class="island-1-2 block">
-            <a class="rob btn" href="#">Adopt</a>
-          </li>
-          <li class="island-1-2 block">
-            <a class="rob btn" href="#">Contact Us</a>
-          </li>
-          <li class="island-1-2 block">
-            <a class="rob btn btn-ghost" href="#">Donate</a>
-          </li>
-        </menu>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <main>
+  <main id="main" tabindex="0" role="main">
     <section class="bg-saver banner embed embed-3by1 relative">
       <div class="embed-item">
         <div class="banner-content pin-c max-length gutter-1-2 text-center">
@@ -97,7 +102,7 @@
         <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
           <a class="menu-card" href="#">
             <div class="embed embed-1by1 relative">
-              <img class="img-flex embed-item" src="images/adopt.jpg" alt="">
+              <img class="img-flex embed-item" src="images/adopt.jpg" alt="Cute picture of puppy" aria-label="Link to the adoption page. Click to learn more.">
               <div class="menu-info pin-cb text-center">
                 <h3 class="rob giga push">Adopt</h3>
                 <p class="rob bold text-upper">Learn More</p>
@@ -108,7 +113,7 @@
         <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
           <a class="menu-card" href="#">
             <div class="embed embed-1by1 relative">
-              <img class="img-flex embed-item" src="images/volunteer.jpg" alt="">
+              <img class="img-flex embed-item" src="images/volunteer.jpg" alt="Cute picture of puppy" aria-label="Link to the volunteer page. Click to learn more.">
               <div class="menu-info pin-cb text-center">
                 <h3 class="rob giga push">Volunteer</h3>
                 <p class="rob bold text-upper">Learn More</p>
@@ -119,7 +124,7 @@
         <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
           <a class="menu-card" href="#">
             <div class="embed embed-1by1 relative">
-              <img class="img-flex embed-item" src="images/events.jpg" alt="">
+              <img class="img-flex embed-item" src="images/events.jpg" alt="Cute picture of puppy" aria-label="Link to the events page. Click to learn more.">
               <div class="menu-info pin-cb text-center">
                 <h3 class="rob giga push">Events</h3>
                 <p class="rob bold text-upper">Learn More</p>
@@ -130,7 +135,7 @@
         <li class="menu cards unit xs-1 s-1 m-1-2 l-1-2 xl-1-4">
           <a class="menu-card" href="#">
             <div class="embed embed-1by1 relative">
-              <img class="img-flex embed-item" src="images/donate.jpg" alt="">
+              <img class="img-flex embed-item" src="images/donate.jpg" alt="Cute picture of puppy" aria-label="Link to the donation page. Click to learn more.">
               <div class="menu-info pin-cb text-center">
                 <h3 class="rob giga push">Donate</h3>
                 <p class="rob bold text-upper">Learn More</p>
@@ -152,8 +157,8 @@
     </section>
   </main>
 
-  <footer>
-    <div class="grid grid-stretch wrapper gutter-1-2 pad-t">
+  <footer role="contentinfo">
+    <div class="grid grid-stretch wrapper gutter pad-t">
       <nav class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4 unit-content-distribute pad-t gutter-1-2">
         <h4 class="kilo rale push-1-2">Get Involved</h4>
         <ul class="list-group footer-list content-fill">
@@ -179,19 +184,19 @@
         <h4 class="kilo rale push-1-2">More About Us</h4>
         <ul class="list-group footer-list content-fill">
           <li class="rob milli">
-            <a class="block" href="#">Blog</a>
+            <a class="block" href="#main">Blog</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">Board Directors</a>
+            <a class="block" href="#main">Board Directors</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">Media Releases</a>
+            <a class="block" href="#main">Media Releases</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">Adoption Process</a>
+            <a class="block" href="#main">Adoption Process</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">Surrendering</a>
+            <a class="block" href="#main">Surrendering</a>
           </li>
         </ul>
       </nav>
@@ -202,7 +207,7 @@
           <li>
             <a class="block" href="https://www.facebook.com">
               <i class="icon i-32">
-                <svg class="fillstuff"><use xlink:href="images/icons.svg#facebook" /></svg>
+                <svg><use xlink:href="images/icons.svg#facebook" /></svg>
               </i>
               <p class="rob ib milli push-0"> Facebook</p>
             </a>
@@ -210,7 +215,7 @@
           <li>
             <a class="block" href="https://www.instagram.com">
               <i class="icon i-32">
-                <svg class="fillstuff"><use xlink:href="images/icons.svg#instagram" /></svg>
+                <svg><use xlink:href="images/icons.svg#instagram" /></svg>
               </i>
               <p class="rob ib milli push-0"> Instagram</p>
             </a>
@@ -218,7 +223,7 @@
           <li>
             <a class="block" href="https://www.youtube.com">
               <i class="icon i-32">
-                <svg class="fillstuff"><use xlink:href="images/icons.svg#youtube" /></svg>
+                <svg><use xlink:href="images/icons.svg#youtube" /></svg>
               </i>
               <p class="rob ib milli push-0"> Youtube</p>
             </a>
@@ -226,7 +231,7 @@
           <li>
             <a class="block" href="https://www.twitter.com">
               <i class="icon i-32">
-                <svg class="fillstuff"><use xlink:href="images/icons.svg#twitter" /></svg>
+                <svg><use xlink:href="images/icons.svg#twitter" /></svg>
               </i>
               <p class="rob ib milli push-0"> Twitter</p>
             </a>
@@ -238,19 +243,26 @@
         <h4 class="kilo rale push-1-2">Aditional Info</h4>
         <ul class="list-group footer-list content-fill">
           <li class="rob milli">
-            <a class="block" href="#">Privacy Policy</a>
+            <a class="block" href="#main">Privacy Policy</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">Terms &amp; Conditions</a>
+            <a class="block" href="#main">Terms &amp; Conditions</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">FAQs</a>
+            <a class="block" href="#main">FAQs</a>
           </li>
           <li class="rob milli">
-            <a class="block" href="#">Contact Us</a>
+            <a class="block" href="#main">Contact Us</a>
           </li>
         </ul>
       </nav>
+    </div>
+    <div class="unit xs-1 s-1 m-0 gutter-1-2 text-center push-1-2">
+      <a href="#top" aria-label="Jump to top of page">
+        <i class="icon i-64">
+          <svg><use fill="#fff" xlink:href="images/icons.svg#return" /></svg>
+        </i>
+      </a>
     </div>
     <div class="unit xs-1 s-1 m-1 l-1 xl-2 text-center pad-b gutter-2">
       <small class="rob micro"> All breed dog rescue in Ottawa © Freedom Dog Rescue all rights reserved</small>
