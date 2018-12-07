@@ -28,11 +28,12 @@ small {
 
 .mob-nav {
   position: absolute;
-  top: 89px;
-  right: 0px;
+  top: 69px;
+  left: -250px;
   width: 15em;
-  display: none;
+  display: block;
   background-color: #15202b;
+  transition: all 500ms ease-in-out;
 }
 
 .mob-nav li {
@@ -93,11 +94,8 @@ header [type="checkbox"] + label::before {
 }
 
 .nav-check:checked ~ .mob-nav {
-  position: absolute;
-  top: 89px;
-  background-color: #15202b;
-  display: block;
-  animation: slide 200ms ease-out forwards;
+  left: 0;
+  transition: all 500ms ease-in-out;
 }
 
 .current a,
@@ -183,7 +181,35 @@ footer .return:hover {
   }
 
   .masthead .nav-check:checked ~ .mob-nav {
-    display: none;
+    display: block;
+  }
+
+  .mob-nav {
+    position: static;
+    width: 100%;
+    display: inline-block;
+    background-color: transparent;
+  }
+
+  .mob-nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .mob-nav ul li {
+    border-top: none;
+    display: inline-block;
+  }
+
+  .mob-nav li:hover {
+    cursor: pointer;
+    background-color: transparent;
+  }
+
+  .mob-nav li:last-child:hover {
+    background-color: transparent;
   }
 
   nav .footer-list {
@@ -199,24 +225,19 @@ footer .return:hover {
 
 @media only screen and (min-width: 60em) {
 
+  .mob-nav {
+    position: static;
+    width: 75%;
+    display: inline-block;
+    background-color: transparent;
+  }
+
   nav:nth-child(2) .footer-list {
     border-right: 2px solid #536372;
   }
 
   nav:last-child .footer-list {
     border: none;
-  }
-
-}
-
-@keyframes slide {
-
-  0% {
-    right: -250px;
-  }
-
-  100% {
-    right: 0px;
   }
 
 }
