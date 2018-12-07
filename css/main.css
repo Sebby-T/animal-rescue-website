@@ -1,3 +1,5 @@
+/* general alterations */
+
 .bg-saver {
   background-color: #536372;
 }
@@ -9,6 +11,8 @@
 .rob {
   font-family: Roboto, sans-serif;
 }
+
+/* header content */
 
 header {
   background-color: #15202b;
@@ -40,11 +44,10 @@ small {
   border-top: 1px solid #fff;
 }
 
-.nav a,
 .mob-nav a {
   color: #fff;
   background-color: transparent;
-  border: none;
+  border-color: transparent;
 }
 
 .mob-nav li:hover {
@@ -62,19 +65,17 @@ small {
   background-color: #ff704d;
 }
 
-.nav a:hover,
 .mob-nav li:hover a {
   color: #0a0f15;
   background-color: #fff;
 }
 
-.nav li:last-child a,
+.banner-content a,
 .mob-nav li:last-child a {
   color: #fff;
   border: 3px solid #fff;
 }
 
-.nav li:last-child a:hover,
 .mob-nav li:last-child a:hover {
   color: #0a0f15;
   background-color: #ff704d;
@@ -98,20 +99,19 @@ header [type="checkbox"] + label::before {
   transition: all 500ms ease-in-out;
 }
 
-.current a,
-.current .btn {
+.current a {
   color: #ff704d;
 }
 
-/* header navigation ends */
+/* header content ends */
 
-.banner {
+/* index css starts */
+
+.banner-home {
   background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)), url("../images/home-banner.jpg");
   background-repeat: no-repeat;
   background-size: 100% auto;
 }
-
-/* banner ends */
 
 .menu-card {
   text-decoration: none;
@@ -148,6 +148,62 @@ header [type="checkbox"] + label::before {
 .about {
   background-color: #fff;
 }
+
+/* index css ends */
+
+/* rescues css starts */
+
+.banner-rescues {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)), url("../images/rescues-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.rescues {
+  background-color: #dbdbdb;
+}
+
+.res-card {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 .1em .4em rgba(0, 0, 0, .5);
+  background-color: #fff;
+}
+
+.action-btn {
+  background-color: transparent;
+  border: 0;
+  border-radius: 50%;
+  padding: .3em;
+  color: #555;
+}
+
+.res-card .btn:hover {
+  color: #fff;
+  border-color: #15202b;
+  background-color: #15202b;
+}
+
+.action-btn:hover {
+  background-color: #e2e2e2;
+  color: #555;
+}
+
+.res-tools-top .action-btn {
+  background-color: rgba(0, 0, 0, .2);
+  color: #fff;
+}
+
+.res-tools-top .action-btn:hover {
+  background-color: #fff;
+  filter: none;
+  box-shadow: 0 .1em .3em #000;
+  color: #555;
+}
+
+/* rescues css ends */
+
+/* footer content */
 
 footer {
   background-color: #15202b;
