@@ -18,12 +18,13 @@ header {
   background-color: #15202b;
 }
 
-.logo {
+.logo i {
   border-right: 2px solid #fff;
 }
 
 h1,
-h4,
+h3,
+.logo,
 .footer-list p,
 .banner-content,
 small {
@@ -118,7 +119,7 @@ header [type="checkbox"] + label::before {
   color: #fff;
 }
 
-.menu-info h3,
+.menu-info h2,
 .menu-info p {
   filter: drop-shadow(0 0 10px rgba(0, 0, 0, .9));
 }
@@ -135,7 +136,7 @@ header [type="checkbox"] + label::before {
   filter: blur(1px);
 }
 
-.cards:hover .menu-info h3 {
+.cards:hover .menu-info h2 {
   transform: scale(1.2);
   transition: all .5s linear;
 }
