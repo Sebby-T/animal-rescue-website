@@ -27,7 +27,8 @@ h3,
 .logo,
 .footer-list p,
 .banner-content,
-small {
+small,
+span {
   color: #fff;
 }
 
