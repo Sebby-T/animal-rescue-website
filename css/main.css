@@ -213,10 +213,6 @@ header [type="checkbox"] + label::before {
   background-size: 100% auto;
 }
 
-.sec-head {
-  border-bottom: 2px solid #536372;
-}
-
 fieldset {
   border: none;
 }
