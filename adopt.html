@@ -80,7 +80,7 @@
     </section>
 
     <section class="max-length island-1-2">
-      <form class="grid push-0 push-1-2 gutter-1-2" method="POST" action="https://formspree.io/turn0213@algonquinlive.com">
+      <form class="grid push-0 push-1-2 gutter-1-2 pad-b-2" method="POST" action="https://formspree.io/turn0213@algonquinlive.com">
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rale gutter-1-2">Name</legend>
           <div class="grid">
@@ -178,7 +178,7 @@
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rale gutter-1-2">General Info</legend>
           <div class="grid">
-            <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push-1-2">
+            <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push">
               <label for="dog-choice" class="milli">
                 What pet dog(s) are you applying for?
                 <input id="dog-choice" type="text" name="dog-choice" required>
@@ -188,36 +188,36 @@
         </fieldset>
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rob push-1-4 gutter-1-2">Do you have a valid driver’s license?</legend>
-          <div>
-            <input type="radio" id="yes-1" name="question-1">
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-1" name="question-1">
             <label class="gutter-1-2 milli rob" for="yes-1">Yes</label>
-            <input type="radio" id="no-1" name="question-1">
+            <input class="push-r-1-4" type="radio" id="no-1" name="question-1">
             <label class="gutter-1-2 milli rob" for="no-1">No</label>
           </div>
         </fieldset>
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rob push-1-4 gutter-1-2">Do you or anyone in your household have allergies to pets?</legend>
-          <div>
-            <input type="radio" id="yes-2" name="question-2">
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-2" name="question-2">
             <label class="gutter-1-2 milli rob" for="yes-2">Yes</label>
-            <input type="radio" id="no-2" name="question-2">
+            <input class="push-r-1-4" type="radio" id="no-2" name="question-2">
             <label class="gutter-1-2 milli rob" for="no-2">No</label>
-            <input type="radio" id="no-2" name="question-2">
+            <input class="push-r-1-4" type="radio" id="maybe-2" name="question-2">
             <label class="gutter-1-2 milli rob" for="maybe-2">Maybe</label>
           </div>
         </fieldset>
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rob push-1-4 gutter-1-2">Do you have a backyard or other accessible areas for your dog to run?</legend>
-          <div>
-            <input type="radio" id="yes-3" name="question-3">
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-3" name="question-3">
             <label class="gutter-1-2 milli rob push-1-2" for="yes-3">Yes</label>
-            <input type="radio" id="no-3" name="question-3">
+            <input class="push-r-1-4" type="radio" id="no-3" name="question-3">
             <label class="gutter-1-2 milli rob push-1-2" for="no-3">No</label>
           </div>
-          <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push-1-2">
+          <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push">
             <label for="text-area-3" class="milli">
-              If yes, please elaborate on how large your yard is or how close the park may be, as well as any other details.
-              <textarea name="text-area-3"></textarea>
+              If yes, please elaborate on how large your yard is or how close the park may be, as well as any other details you may want to add.
+              <textarea id="text-area-3" name="text-area-3"></textarea>
             </label>
           </div>
         </fieldset>
@@ -226,70 +226,116 @@
           <div class="grid pad-t-1-4">
             <div class="unit xs-1 s-1 m-1-2 l-1-2">
               <div class="push-1-2">
-                <input type="checkbox" id="anxiety" name="question-4">
-                <label  class="milli rob gutter-1-2" for="anxiety">Seperation anxiety</label>
+                <input class="push-r-1-4" type="checkbox" id="anxiety" name="question-4">
+                <label class="milli rob gutter-1-2" for="anxiety">Seperation anxiety</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="reactions" name="question-4">
-                <label  class="milli rob gutter-1-2" for="reactions">Reaction to other dogs</label>
+                <input class="push-r-1-4" type="checkbox" id="reactions" name="question-4">
+                <label class="milli rob gutter-1-2" for="reactions">Reaction to other dogs</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="agressive" name="question-4">
-                <label  class="milli rob gutter-1-2" for="agressive">Dog agression</label>
+                <input class="push-r-1-4" type="checkbox" id="agressive" name="question-4">
+                <label class="milli rob gutter-1-2" for="agressive">Dog agression</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="exciteded" name="question-4">
-                <label  class="milli rob gutter-1-2" for="exciteded">Excitability</label>
+                <input class="push-r-1-4" type="checkbox" id="exciteded" name="question-4">
+                <label class="milli rob gutter-1-2" for="exciteded">Excitability</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="barking" name="question-4">
-                <label  class="milli rob gutter-1-2" for="barking">Barking</label>
+                <input class="push-r-1-4" type="checkbox" id="barking" name="question-4">
+                <label class="milli rob gutter-1-2" for="barking">Barking</label>
               </div>
             </div>
             <div class="unit xs-1 s-1 m-1-2 l-1-2">
               <div class="push-1-2">
-                <input type="checkbox" id="mild-agression" name="question-4">
-                <label  class="milli rob gutter-1-2" for="mild-agression">Mild agression</label>
+                <input class="push-r-1-4" type="checkbox" id="mild-agression" name="question-4">
+                <label class="milli rob gutter-1-2" for="mild-agression">Mild agression</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="vocal" name="question-4">
-                <label  class="milli rob gutter-1-2" for="vocal">Vocalization</label>
+                <input class="push-r-1-4" type="checkbox" id="vocal" name="question-4">
+                <label class="milli rob gutter-1-2" for="vocal">Vocalization</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="obedience" name="question-4">
-                <label  class="milli rob gutter-1-2" for="obedience">Obedience</label>
+                <input class="push-r-1-4" type="checkbox" id="obedience" name="question-4">
+                <label class="milli rob gutter-1-2" for="obedience">Obedience</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="training" name="question-4">
-                <label  class="milli rob gutter-1-2" for="training">House Training</label>
+                <input class="push-r-1-4" type="checkbox" id="training" name="question-4">
+                <label class="milli rob gutter-1-2" for="training">House Training</label>
               </div>
               <div class="push-1-2">
-                <input type="checkbox" id="fear" name="question-4">
-                <label  class="milli rob gutter-1-2" for="fear">Fearfullness</label>
+                <input class="push-r-1-4" type="checkbox" id="fear" name="question-4">
+                <label class="milli rob gutter-1-2" for="fear">Fearfullness</label>
               </div>
             </div>
           </div>
         </fieldset>
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rob push-1-4 gutter-1-2">Do you need a dog that has already been trained?</legend>
-          <div>
-            <input type="radio" id="yes-5" name="question-5">
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-5" name="question-5">
             <label class="gutter-1-2 milli rob" for="yes-5">Yes</label>
-            <input type="radio" id="no-5" name="question-5">
+            <input class="push-r-1-4" type="radio" id="no-5" name="question-5">
             <label class="gutter-1-2 milli rob" for="no-5">No</label>
           </div>
         </fieldset>
         <fieldset class="unit xs-1 form-sec push">
           <legend class="form-legend rob push-1-4 gutter-1-2">Do you think you can handle a difficult dog?</legend>
-          <div>
-            <input type="radio" id="yes-6" name="question-6">
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-6" name="question-6">
             <label class="gutter-1-2 milli rob" for="yes-6">Yes</label>
-            <input type="radio" id="no-6" name="question-6">
+            <input class="push-r-1-4" type="radio" id="no-6" name="question-6">
             <label class="gutter-1-2 milli rob" for="no-6">No</label>
-            <input type="radio" id="ns-6" name="question-6">
+            <input class="push-r-1-4" type="radio" id="ns-6" name="question-6">
             <label class="gutter-1-2 milli rob" for="ns-6">Not Sure</label>
           </div>
         </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Comments &amp; Thoughts</legend>
+          <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push">
+            <label for="text-area-7" class="milli">
+              Let us know a little more about you or anything we may have missed down below.
+              <textarea id="text-area-7" name="text-area-7"></textarea>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Have you ever been convicted of neglect or cruelty to animals?</legend>
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-8" name="question-8">
+            <label class="gutter-1-2 milli rob" for="yes-8">Yes</label>
+            <input class="push-r-1-4" type="radio" id="no-8" name="question-8">
+            <label class="gutter-1-2 milli rob" for="no-8">No</label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Are you willing to have a <span class="text-upper">Freedom Dog Rescue</span> representative do a home visit by appointment?</legend>
+          <div class="push">
+            <input class="push-r-1-4" type="radio" id="yes-9" name="question-8">
+            <label class="gutter-1-2 milli rob" for="yes-9">Yes</label>
+            <input class="push-r-1-4" type="radio" id="no-9" name="question-8">
+            <label class="gutter-1-2 milli rob" for="no-9">No</label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2 normal">Falsified information will lead to automatic rejection of the application. Freedom Dog Rescue reserves the right to refuse any applicant. By electronically signing this application, you understand that it is your responsibility to see and evaluate the dog for yourself before aggreeing to adoption. The adoption of a lifelong animal should not be impulsive, but rather a carefully thought out decision, which will ensure a loving lasting relationship.</legend>
+          <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push">
+            <label for="text-area-10" class="milli">
+              Electronic Signature (Full Name)
+              <textarea id="text-area-10" name="text-area-10" required></textarea>
+            </label>
+          </div>
+          <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+            <label for="sign-date" class="milli">
+              Date of Signature
+              <input id="sign-date" type="date" name="sign-date" required>
+            </label>
+          </div>
+        </fieldset>
+        <div class="unit xs-1 gutter-1-2 form-btn">
+          <button type="submit" class="rale text-upper btn">Submit</button>
+        </div>
+        <input class="unit hidden" type="hidden" name="_subject" value="Request Adoption Form">
       </form>
     </section>
 
