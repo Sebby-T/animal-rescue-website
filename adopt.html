@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Adoption Form</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="shortcut icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="favicon-196.png">
+  <link href="css/modules.css" rel="stylesheet">
+  <link href="css/grid.css" rel="stylesheet">
+  <link href="css/type.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto" rel="stylesheet">
+</head>
+<body>
+
+  <ul class="skip-links">
+    <li><a href="#main">Jump to main content</a></li>
+    <li><a href="#nav">Jump to navigation</a></li>
+  </ul>
+
+  <header role="banner">
+    <div class="masthead grid grid-middle text-center wrapper" id="top">
+      <div class="unit xs-1-2 s-1-2 m-1 l-1-4 logo">
+        <div class="ib push-1-2 pad-t-1-2">
+          <a href="index.html" aria-label="link to homepage.">
+            <i class="icon i-48">
+              <svg><use fill="#fff" xlink:href="images/fdr-logos.svg#fdr-logo-white" /></svg>
+            </i>
+          </a>
+        </div>
+        <div class="ib valign-middle">
+          <p class="kilo rale push-0 text-left bold">Freedom<br>Dog Rescue</p>
+        </div>
+      </div>
+      <input type="checkbox" id="mob-nav" class="nav-check unit xs-0" required>
+      <label for="mob-nav" class="nav-label unit xs-1-2 s-1-2 m-0 text-right island-1-2">
+        <i class="icon i-48">
+          <svg class="nav-icon">
+            <use xlink:href="images/icons.svg#hamburger" />
+          </svg>
+        </i>
+      </label>
+      <nav class="mob-nav unit xs-1 s-1 m-1 l-3-4 zindex-1000" id="nav" role="navigation">
+        <ul class="list-group push-0 text-center">
+          <li class="pad-t-1-2 gutter-1-8 pad-b-1-2 block">
+            <a class="rob btn" href="#">About Us</a>
+          </li>
+          <li class="pad-t-1-2 gutter-1-8 pad-b-1-2 block">
+            <a class="rob btn" href="#">Volunteer</a>
+          </li>
+          <li class="pad-t-1-2 gutter-1-8 pad-b-1-2 block">
+            <a class="rob btn" href="#">Events</a>
+          </li>
+          <li class="pad-t-1-2 gutter-1-8 pad-b-1-2 block">
+            <a class="rob btn" href="rescues.html">Rescues</a>
+          </li>
+          <li class="pad-t-1-2 gutter-1-8 pad-b-1-2 block current">
+            <a class="rob btn" href="adopt.html">Adopt</a>
+          </li>
+          <li class="pad-t-1-2 gutter-1-8 pad-b-1-2 block">
+            <a class="rob btn btn-ghost" href="#">Donate</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" tabindex="0" role="main">
+    <section class="bg-saver banner-adopt embed embed-24by10 relative push-2">
+      <div class="embed-item">
+        <div class="banner-content pin-c max-length gutter-1-2 text-center">
+          <h1 class="rale giga">Everybody needs somebody. And that starts here.</h1>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec-head push-2">
+      <h2 class="rale text-center mega">Adoption Form</h2>
+    </section>
+
+    <section class="max-length island-1-2">
+      <form class="grid push-0 push-1-2 gutter-1-2" method="POST" action="https://formspree.io/turn0213@algonquinlive.com">
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rale gutter-1-2">Name</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="first-name" class="milli">
+                First Name
+                <input id="first-name" type="text" name="first-name" required>
+              </label>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="last-name" class="milli">
+                Last Name
+                <input id="last-name" type="text" name="last-name" required>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rale gutter-1-2">Address</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push">
+              <label for="address" class="milli">
+                Street Address
+                <input id="address" type="text" name="address" required>
+              </label>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="address-2" class="milli">
+                Street Address Line 2
+                <input id="address-2" type="text" name="address-2">
+              </label>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 l-1-2 rob gutter-1-2 push">
+              <label class="milli" for="postal-code">
+                Postal code
+                <input id="postal-code" minlength="6" type="text" name="postal-code" required>
+              </label>
+            </div>
+            <div class="unit xs-1 s-1-2 m-1-2 l-1-2 gutter-1-2 rob push">
+              <label class="milli" for="city">
+                City
+                <input id="city" type="text" name="city" required>
+              </label>
+            </div>
+            <div class="unit xs-1 s-1-2 m-1-2 l-1-2 gutter-1-2 rob">
+              <label class="milli" for="province">Province</label>
+              <select class="push-1-2" id="province" name="province" required>
+                <option value="">Select a province</option>
+                <option>Alberta</option>
+                <option>British Columbia</option>
+                <option>Manitoba</option>
+                <option>New Brunswick</option>
+                <option>Newfoundland & Labrador</option>
+                <option>Northwest Territories</option>
+                <option>Nova Scotia</option>
+                <option>Nunavut</option>
+                <option>Ontario</option>
+                <option>Prince Edward Island</option>
+                <option>Québec</option>
+                <option>Saskatchewan</option>
+                <option>Yukon</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rale gutter-1-2">Contact Info</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="home-phone" class="milli">
+                Telephone
+                <input id="home-phone" type="tel" name="home-phone" maxlength="10" required>
+              </label>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="cell-phone" class="milli">
+                Cellphone
+                <input id="cell-phone" type="tel" name="cell-phone" maxlength="10">
+              </label>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="email" class="milli">
+                Email
+                <input id="email" type="email" name="email" placeholder="ilovedogs@email.com" required>
+              </label>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 rob gutter-1-2 push">
+              <label for="birthdate" class="milli">
+                Birthdate
+                <input id="birthdate" type="date" name="birthdate" required>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rale gutter-1-2">General Info</legend>
+          <div class="grid">
+            <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push-1-2">
+              <label for="dog-choice" class="milli">
+                What pet dog(s) are you applying for?
+                <input id="dog-choice" type="text" name="dog-choice" required>
+              </label>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Do you have a valid driver’s license?</legend>
+          <div>
+            <input type="radio" id="yes-1" name="question-1">
+            <label class="gutter-1-2 milli rob" for="yes-1">Yes</label>
+            <input type="radio" id="no-1" name="question-1">
+            <label class="gutter-1-2 milli rob" for="no-1">No</label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Do you or anyone in your household have allergies to pets?</legend>
+          <div>
+            <input type="radio" id="yes-2" name="question-2">
+            <label class="gutter-1-2 milli rob" for="yes-2">Yes</label>
+            <input type="radio" id="no-2" name="question-2">
+            <label class="gutter-1-2 milli rob" for="no-2">No</label>
+            <input type="radio" id="no-2" name="question-2">
+            <label class="gutter-1-2 milli rob" for="maybe-2">Maybe</label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Do you have a backyard or other accessible areas for your dog to run?</legend>
+          <div>
+            <input type="radio" id="yes-3" name="question-3">
+            <label class="gutter-1-2 milli rob push-1-2" for="yes-3">Yes</label>
+            <input type="radio" id="no-3" name="question-3">
+            <label class="gutter-1-2 milli rob push-1-2" for="no-3">No</label>
+          </div>
+          <div class="unit xs-1 s-1 m-1 rob gutter-1-2 push-1-2">
+            <label for="text-area-3" class="milli">
+              If yes, please elaborate on how large your yard is or how close the park may be, as well as any other details.
+              <textarea name="text-area-3"></textarea>
+            </label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">What problems are you willing to work with in a pet? <span class="rob milli normal">(Check all that apply)</span></legend>
+          <div class="grid pad-t-1-4">
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <div class="push-1-2">
+                <input type="checkbox" id="anxiety" name="question-4">
+                <label  class="milli rob gutter-1-2" for="anxiety">Seperation anxiety</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="reactions" name="question-4">
+                <label  class="milli rob gutter-1-2" for="reactions">Reaction to other dogs</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="agressive" name="question-4">
+                <label  class="milli rob gutter-1-2" for="agressive">Dog agression</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="exciteded" name="question-4">
+                <label  class="milli rob gutter-1-2" for="exciteded">Excitability</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="barking" name="question-4">
+                <label  class="milli rob gutter-1-2" for="barking">Barking</label>
+              </div>
+            </div>
+            <div class="unit xs-1 s-1 m-1-2 l-1-2">
+              <div class="push-1-2">
+                <input type="checkbox" id="mild-agression" name="question-4">
+                <label  class="milli rob gutter-1-2" for="mild-agression">Mild agression</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="vocal" name="question-4">
+                <label  class="milli rob gutter-1-2" for="vocal">Vocalization</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="obedience" name="question-4">
+                <label  class="milli rob gutter-1-2" for="obedience">Obedience</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="training" name="question-4">
+                <label  class="milli rob gutter-1-2" for="training">House Training</label>
+              </div>
+              <div class="push-1-2">
+                <input type="checkbox" id="fear" name="question-4">
+                <label  class="milli rob gutter-1-2" for="fear">Fearfullness</label>
+              </div>
+            </div>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Do you need a dog that has already been trained?</legend>
+          <div>
+            <input type="radio" id="yes-5" name="question-5">
+            <label class="gutter-1-2 milli rob" for="yes-5">Yes</label>
+            <input type="radio" id="no-5" name="question-5">
+            <label class="gutter-1-2 milli rob" for="no-5">No</label>
+          </div>
+        </fieldset>
+        <fieldset class="unit xs-1 form-sec push">
+          <legend class="form-legend rob push-1-4 gutter-1-2">Do you think you can handle a difficult dog?</legend>
+          <div>
+            <input type="radio" id="yes-6" name="question-6">
+            <label class="gutter-1-2 milli rob" for="yes-6">Yes</label>
+            <input type="radio" id="no-6" name="question-6">
+            <label class="gutter-1-2 milli rob" for="no-6">No</label>
+            <input type="radio" id="ns-6" name="question-6">
+            <label class="gutter-1-2 milli rob" for="ns-6">Not Sure</label>
+          </div>
+        </fieldset>
+      </form>
+    </section>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="grid grid-stretch wrapper gutter pad-t">
+      <nav class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4 unit-content-distribute pad-t gutter-1-2">
+        <h3 class="kilo rale push-1-2">Get Involved</h3>
+        <ul class="list-group footer-list content-fill">
+          <li class="rob milli">
+            <a class="block" href="#">Donate</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#">Adopt</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#">Foster</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#">Volunteer</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#">Events</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4 unit-content-distribute pad-t gutter-1-2">
+        <h3 class="kilo rale push-1-2">More About Us</h3>
+        <ul class="list-group footer-list content-fill">
+          <li class="rob milli">
+            <a class="block" href="#main">Blog</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">Board Directors</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">Media Releases</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">Adoption Process</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">Surrendering</a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4 unit-content-distribute pad-t gutter-1-2">
+        <h3 class="kilo rale push-1-2">Connect With Us</h3>
+        <ul class="list-group footer-list">
+          <li>
+            <a class="block" href="https://www.facebook.com">
+              <i class="icon i-32">
+                <svg><use xlink:href="images/icons.svg#facebook" /></svg>
+              </i>
+              <p class="rob ib milli push-0"> Facebook</p>
+            </a>
+          </li>
+          <li>
+            <a class="block" href="https://www.instagram.com">
+              <i class="icon i-32">
+                <svg><use xlink:href="images/icons.svg#instagram" /></svg>
+              </i>
+              <p class="rob ib milli push-0"> Instagram</p>
+            </a>
+          </li>
+          <li>
+            <a class="block" href="https://www.youtube.com">
+              <i class="icon i-32">
+                <svg><use xlink:href="images/icons.svg#youtube" /></svg>
+              </i>
+              <p class="rob ib milli push-0"> Youtube</p>
+            </a>
+          </li>
+          <li>
+            <a class="block" href="https://www.twitter.com">
+              <i class="icon i-32">
+                <svg><use xlink:href="images/icons.svg#twitter" /></svg>
+              </i>
+              <p class="rob ib milli push-0"> Twitter</p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <nav class="unit xs-1 s-1 m-1-2 l-1-4 xl-1-4 unit-content-distribute pad-t gutter-1-2">
+        <h3 class="kilo rale push-1-2">Aditional Info</h3>
+        <ul class="list-group footer-list content-fill">
+          <li class="rob milli">
+            <a class="block" href="#main">Privacy Policy</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">Terms &amp; Conditions</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">FAQs</a>
+          </li>
+          <li class="rob milli">
+            <a class="block" href="#main">Contact Us</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="unit xs-1 s-1 m-1 gutter-1-2 text-center push-1-2 relative">
+      <a href="#top" aria-label="Jump to top of page" class="pin-bottom-right gutter">
+        <i class="icon i-64">
+          <svg class="return"><use xlink:href="images/icons.svg#return" /></svg>
+        </i>
+      </a>
+    </div>
+    <div class="unit xs-1 s-1 m-1 l-1 xl-2 text-center pad-b gutter-2">
+      <small class="rob micro"> All breed dog rescue in Ottawa © Freedom Dog Rescue all rights reserved</small>
+    </div>
+  </footer>
+
+</body>
+</html>

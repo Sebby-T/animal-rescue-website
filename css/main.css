@@ -27,8 +27,7 @@ h3,
 .logo,
 .footer-list p,
 .banner-content,
-small,
-span {
+small {
   color: #fff;
 }
 
@@ -204,6 +203,24 @@ header [type="checkbox"] + label::before {
 }
 
 /* rescues css ends */
+
+/* adopt css starts */
+
+.banner-adopt {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, .6), rgba(0, 0, 0, 0)), url("../images/adopt-banner.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+.sec-head {
+  border-bottom: 2px solid #536372;
+}
+
+fieldset {
+  border: none;
+}
+
+/* adopt css ends */
 
 /* footer content */
 
