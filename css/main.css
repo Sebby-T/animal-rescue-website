@@ -213,8 +213,38 @@ header [type="checkbox"] + label::before {
   background-size: 100% auto;
 }
 
+.sec-head {
+  border-top: 2px solid #15202b;
+  border-bottom: 2px solid #15202b;
+}
+
+form {
+  border: 2px solid #999;
+  border-radius: 8px;
+  box-shadow: 0 .1em .4em rgba(0, 0, 0, .5);
+}
+
+form input,
+form textarea,
+form select,
+form [type="checkbox"] + label::before {
+  border-radius: 6px;
+}
+
 fieldset {
   border: none;
+}
+
+.form-btn button {
+  color: #15202b;
+  border-color: #15202b;
+  background-color: transparent;
+}
+
+.form-btn button:hover {
+  color: #fff;
+  border-color: #15202b;
+  background-color: #15202b;
 }
 
 /* adopt css ends */
