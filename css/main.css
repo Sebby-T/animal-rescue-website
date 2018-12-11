@@ -22,6 +22,48 @@ header {
   border-right: 2px solid #fff;
 }
 
+.logo a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.logo .logo-wordmark {
+  opacity: 1;
+  transition: all .5s ease-in;
+}
+
+.logo .logo-home {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  transition: all .3s ease-in;
+  clip-path: inset(0px 120px 0px 50px);
+}
+
+.logo .mask {
+  position: absolute;
+  left: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.logo:hover .logo-wordmark {
+  opacity: 0;
+  transition: all .3s ease-out;
+}
+
+.logo:hover .logo-home {
+  position: absolute;
+  left: 55px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 1;
+  clip-path: inset(0px 0px 0px 0px);
+  transition: all .5s ease-out;
+}
+
 h1,
 h3,
 .logo,
@@ -84,14 +126,20 @@ small,
   border: 3px solid #0a0f15;
 }
 
+.mob-nav li .btn:not(.donate) {
+  display: block;
+}
+
 header [type="checkbox"] + label::before {
   top: -10em;
 }
 
+footer .return,
 .nav-label .nav-icon {
   fill: #fff;
 }
 
+footer .return:hover,
 .nav-check:checked ~ .nav-label .nav-icon {
   fill: #ff704d;
 }
@@ -99,10 +147,6 @@ header [type="checkbox"] + label::before {
 .nav-check:checked ~ .mob-nav {
   left: 0;
   transition: all 500ms ease-in-out;
-}
-
-.current a {
-  color: #ff704d;
 }
 
 /* header content ends */
@@ -262,17 +306,10 @@ footer li a {
   text-decoration: none;
 }
 
+.current a,
 .footer-list li:hover a,
 .footer-list li:hover p {
   color: #ff704d;
-}
-
-footer .return {
-  fill: #fff;
-}
-
-footer .return:hover {
-  fill: #ff704d;
 }
 
 @media only screen and (min-width: 38em) {
