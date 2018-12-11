@@ -34,12 +34,12 @@ header {
 
 .logo .logo-home {
   position: absolute;
-  left: 0px;
+  left: 0;
   top: 50%;
   transform: translateY(-50%);
   opacity: 1;
   transition: all .3s ease-in;
-  clip-path: inset(0px 120px 0px 50px);
+  clip-path: inset(0 120px 0 50px);
 }
 
 .logo .mask {
@@ -60,7 +60,7 @@ header {
   top: 50%;
   transform: translateY(-50%);
   opacity: 1;
-  clip-path: inset(0px 0px 0px 0px);
+  clip-path: inset(0 0 0 0);
   transition: all .5s ease-out;
 }
 
@@ -122,6 +122,12 @@ small,
 
 .mob-nav li:last-child a:hover {
   color: #0a0f15;
+  background-color: #ff704d;
+  border: 3px solid #0a0f15;
+}
+
+.mob-nav li:last-child a:focus {
+  color: #000;
   background-color: #ff704d;
   border: 3px solid #0a0f15;
 }
@@ -193,6 +199,10 @@ footer .return:hover,
 
 .about {
   background-color: #fff;
+}
+
+.cards a:focus .menu-info p {
+  outline: 3px solid #000;
 }
 
 /* index css ends */
