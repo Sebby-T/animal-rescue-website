@@ -47,7 +47,7 @@ header {
   clip-path: inset(0 85px 0 54px);
 }
 
-.logo:hover > .logo-home{
+.logo:hover > .logo-home {
   opacity: 1;
 }
 
@@ -68,11 +68,11 @@ header {
   left: 55px;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 1;
   -webkit-clip-path: inset(0 0 0 0);
-          clip-path: inset(0 0 0 0);
+  clip-path: inset(0 0 0 0);
   -webkit-transition: all .5s ease-out;
   -o-transition: all .5s ease-out;
   transition: all .5s ease-out;
