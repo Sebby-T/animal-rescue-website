@@ -36,10 +36,20 @@ header {
   position: absolute;
   left: 0;
   top: 50%;
-  transform: translateY(-50%);
-  opacity: 1;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  opacity: 0;
+  -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
-  clip-path: inset(0 120px 0 50px);
+  -webkit-transition: all .3s ease-in;
+  -webkit-clip-path: inset(0 85px 0 54px);
+          clip-path: inset(0 85px 0 54px);
+
+}
+
+.logo:hover > .logo-home{
+  opacity: 1;
 }
 
 .logo .mask {
@@ -58,9 +68,14 @@ header {
   position: absolute;
   left: 55px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   opacity: 1;
-  clip-path: inset(0 0 0 0);
+  -webkit-clip-path: inset(0 0 0 0);
+          clip-path: inset(0 0 0 0);
+  -webkit-transition: all .5s ease-out;
+  -o-transition: all .5s ease-out;
   transition: all .5s ease-out;
 }
 
@@ -81,6 +96,7 @@ small,
   width: 15em;
   display: block;
   background-color: #15202b;
+  opacity: 0;
   transition: all 500ms ease-in-out;
 }
 
@@ -112,6 +128,7 @@ small,
 .mob-nav li:hover a {
   color: #0a0f15;
   background-color: #fff;
+  border-color: #fff;
 }
 
 .banner-content a,
@@ -152,6 +169,7 @@ footer .return:hover,
 
 .nav-check:checked ~ .mob-nav {
   left: 0;
+  opacity: 1;
   transition: all 500ms ease-in-out;
 }
 
@@ -203,6 +221,10 @@ footer .return:hover,
 
 .cards a:focus .menu-info p {
   outline: 3px solid #000;
+}
+
+.cards {
+  margin: -.3px;
 }
 
 /* index css ends */
@@ -334,6 +356,7 @@ footer li a {
   }
 
   .mob-nav {
+    opacity: 1;
     position: static;
     width: 100%;
     display: inline-block;
