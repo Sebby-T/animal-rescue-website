@@ -12,6 +12,12 @@
   font-family: Roboto, sans-serif;
 }
 
+.btn-ghost:hover {
+  background-color: #fff;
+  color: #15202b;
+  border-color: #fff;
+}
+
 /* header content */
 
 header {
