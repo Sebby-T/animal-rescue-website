@@ -247,6 +247,10 @@ footer .return:hover,
   background-color: #fff;
 }
 
+.res-content {
+  background-color: #fff;
+}
+
 .action-btn {
   background-color: transparent;
   border: 0;
