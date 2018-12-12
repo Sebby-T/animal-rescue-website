@@ -37,15 +37,14 @@ header {
   left: 0;
   top: 50%;
   -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-          transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
   opacity: 0;
   -o-transition: all .3s ease-in;
   transition: all .3s ease-in;
   -webkit-transition: all .3s ease-in;
   -webkit-clip-path: inset(0 85px 0 54px);
-          clip-path: inset(0 85px 0 54px);
-
+  clip-path: inset(0 85px 0 54px);
 }
 
 .logo:hover > .logo-home{
